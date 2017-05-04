@@ -108,8 +108,9 @@ public class Home_work_1 {
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setPlatform(Platform.ANDROID);
         WebDriver driver = new ChromeDriver(cap);
-        driver.manage().window().maximize();
-        driver.navigate().to("http://avito.ru");
+        driver.manage().window().setSize(new Dimension(600, 400));
+//        driver.manage().window().maximize();
+        driver.navigate().to("http://epam.com");
         Thread.sleep(4000);
 
         driver.close();
