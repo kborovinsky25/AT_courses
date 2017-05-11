@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lesson 3" thread-count="1">
+    <test name="correct test">
+        <classes>
+            <class name="TestHomeWork">
+                <methods>
+                    <include name="test_positive" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="incorrect test">
+        <classes>
+            <class name="TestHomeWork">
+                <methods>
+                    <include name="test_negative" />
+                    <include name="test_negative_csv" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
